@@ -1,0 +1,14 @@
+
+public class Do While{
+
+    public static void main(String args[]){
+        int i=3;
+       do
+        {
+            System.out.println("one of the powerful concept is"+"java programming loops");
+            i=i*4;
+        } while(i<=60);
+
+        
+    }
+}

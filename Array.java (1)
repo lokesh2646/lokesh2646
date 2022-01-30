@@ -1,0 +1,33 @@
+
+public class Array{
+
+    public static void main(String args[]){
+        int arr[]= new int[8];
+        String slrr[]= new String[4];
+        float flr[]={20.9f,30.8f,40.6f};
+        slrr[0]="name:java";
+        slrr[1]="type:programming";
+        slrr[2]="used for:app development";
+        slrr[3]="range:Powerful language";
+        arr[0]=12;
+        arr[1]=13;
+        arr[2]=14;
+        arr[3]=15;
+        arr[4]=172;
+        arr[5]=18;
+        arr[6]=18;
+        arr[7]=126;
+        for(int x:arr)
+        {
+            System.out.println("it is a integer array value : "+x);
+            }
+        for(String y:slrr)
+        {
+            System.out.println("it is a string array  value : "+y);
+        }
+        for(float z:flr)
+        {
+            System.out.println("it is a flaot array value : "+z);
+        }
+}
+}

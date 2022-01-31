@@ -1,0 +1,26 @@
+
+public class StringMethods{
+
+    public static void main(String args[]){
+        String st=new String(" LOKESH ");
+        String st1=" GANGARAPU ";
+        System.out.println(st);
+        System.out.println(st1);
+        System.out.println(st.length());
+        System.out.println(st1.length());
+        System.out.println(st.charAt(3));
+        System.out.println(st1.charAt(4));
+       System.out.println(st.concat(st1));
+      System.out.println(st1.concat (st));
+      System.out.println(st.indexOf("E"));
+     System.out.println(st1.indexOf("R")); System.out.println(st.replace("OKESH","okesh"));
+     System.out.println(st1.replace("ANGARAPU","angarapu"));
+     System.out.println(st.compareTo(st1));
+     System.out.println(st1.compareTo(st));
+     
+     System.out.println(st.trim());
+     System.out.println(st1.trim());
+     System.out.println("it is immutable values can not changed"+"==="+st);
+     System.out.println("after we printing updated string it displays only first assigned values it is immutable"+"=== "+st1);
+    }
+}

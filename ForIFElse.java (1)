@@ -1,0 +1,22 @@
+
+public class ForIFElse{
+
+    public static void main(String args[]){
+        int i;
+          for(i=0;i<=4;i++)
+           {
+            System.out.println(i +"JAVA IS A POWER-PACKED PROGRAMMING LANGUAGE");
+            }
+         if(i<=5)
+         {
+          System.out.println("OOPS");
+   System.out.println("EXCEPTION HANDLING"); System.out.println("USER DEFINED PACKAGES");
+          System.out.println("THREADS");
+          System.out.println("MEMORY MANAGEMENT");
+           }
+        else
+        {
+        System.out.println("APP DEVELOPMENT"+i);
+        }
+    }
+}

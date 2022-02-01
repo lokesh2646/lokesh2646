@@ -1,0 +1,64 @@
+
+class Sthread extends Thread
+   {
+       public void run()
+       {
+           Thread g=currentThread();
+           int i=0;
+           while(i<=6)
+           {
+               try
+                {
+                    g.sleep(10);
+                    System.out.println(i);
+                }
+                catch(Exception e)
+                {
+                    
+                }
+               i++;
+           }
+        }
+   }
+ public class Tthread
+{
+    public static void main(String args[])
+        {
+        Sthread s1=new Sthread();
+        Sthread s2=new Sthread();
+        Sthread s3=new Sthread();
+        Sthread s4=new Sthread();
+       System.out.println("Thread NAME= "+s1.getName());
+       System.out.println("Thread PRIORITY= "+s1.getPriority());
+       System.out.println("Thread ID= "+s1.getId());
+       System.out.println("Thread STATUS= "+s1.isAlive());
+       s1.setName("Lokesh");
+       System.out.println("After changing the thread name: "+s1.getName());
+       s1.setPriority(4);
+       System.out.println("after changing the thread priority= "+s1.getPriority());
+          s1.start();
+          System.out.println("Initially Thread STATUS= "+s1.isAlive());
+          try
+           {
+               s1.join();
+           }
+           catch(Exception e)
+           {
+               
+           }
+           System.out.println("After Thread STATUS= "+s1.isAlive());
+          s2.start();
+          System.out.println("3rd Thread with join method");
+          try
+          {
+              s3.join();
+          }
+          catch(Exception e)
+          {
+              
+          }
+          s3.start();
+          s4.start(); 
+            
+        }
+}
